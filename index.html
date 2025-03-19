@@ -1,0 +1,150 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Harvest Grocery Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .product-section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .product-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .product-item {
+            background-color: #e8f5e9;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            width: 48%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .form-section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .form-section input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .media-section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .media-section video, .media-section audio {
+            width: 48%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Fresh Harvest Grocery Store</h1>
+    </div>
+
+    <div class="product-section">
+        <h2>Our Fresh Produce</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <h3>Watermelon Juice</h3>
+                <p>Cool, delicious, and refreshing summer drink!</p>
+            </div>
+            <div class="product-item">
+                <h3>Fresh Fruits</h3>
+                <p>Locally sourced, farm-fresh fruits</p>
+            </div>
+        </div>
+
+        <h2>Nutritional Facts</h2>
+        <table>
+            <tr>
+                <th>Nutrient</th>
+                <th>Per 100 ml</th>
+                <th>% RDA per serve</th>
+            </tr>
+            <tr>
+                <td>Energy</td>
+                <td>52 kcal</td>
+                <td>5.2%</td>
+            </tr>
+            <tr>
+                <td>Carbohydrate</td>
+                <td>13.5g</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Total Sugar</td>
+                <td>12.8g</td>
+                <td>-</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="form-section">
+        <h2>Join Our Loyalty Program</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <div>
+                Gender: 
+                <input type="radio" name="gender" id="male"> <label for="male">Male</label>
+                <input type="radio" name="gender" id="female"> <label for="female">Female</label>
+            </div>
+            <input type="submit" value="Join Now">
+        </form>
+    </div>
+
+    <div class="media-section">
+        <video controls>
+            <source src="https://youtu.be/DTEx0ohFyGg" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <audio controls>
+            <source src="/api/placeholder/400/100" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+
+    <div class="product-section">
+        <h2>Customer Reviews</h2>
+        <p>"Amazing fresh produce and delicious juices!" - John D.</p>
+        <p>"Best grocery store in town!" - Sarah M.</p>
+    </div>
+</body>
+</html>
